@@ -12,8 +12,27 @@ Inicialemnte eu vou mostrar os requisitos utilizados para as duas maquinas
     <li> Ferramenta de SSH usada foi o Mobaxternm
 </ol>
 
-A ideia inicial do Oracle RAC é ter dois servidores (com a mesma configuração de hardware) compartilhando o mesmo disco para os ambos os servidores.
-Fazendo assim, um mirror do servidor 1 para o servidor 2.
+🔴 Oracle Grid Infrastructure <br>
+
+O Oracle Grid Infrastructure é a base responsável pelo funcionamento do Oracle RAC (Real Application Clusters) e do Oracle ASM (Automatic Storage Management).
+Ele fornece alta disponibilidade, gerenciamento de cluster, monitoramento de recursos e acesso compartilhado ao armazenamento entre múltiplos servidores.
+
+Com o Oracle Grid é possível:
+
+Implementar ambientes Oracle RAC <br>
+Gerenciar recursos do cluster <br>
+Monitorar serviços e instâncias <br>
+Controlar o Oracle ASM <br>
+Garantir alta disponibilidade e tolerância a falhas <br>
+
+Este repositório contém: <br>
+
+Scripts utilizados na instalação e administração do GRID <br>
+Evidências e imagens do laboratório <br>
+Comandos de monitoramento e troubleshooting <br>
+Documentação de apoio para ambientes Oracle RAC 19c <br>
+
+
 ```text
 🖥️ RAC 1  -----------\
                        \
@@ -33,7 +52,7 @@ Alguns pre-requisitos a ser feito antes de iniciar qualquer instalação.<br>
 Teste de ping e acesso SSH. <br>
 
 No servidor Zeus vamos fazer um ping para o Ares.
-<img width="714" height="304" alt="image" src="https://github.com/user-attachments/assets/7e94d112-5dbc-4961-b22d-bff23d40b293" />
+<img width="714" height="304" alt="image" src="https://github.com/user-attachments/assets/7e94d112-5dbc-4961-b22d-bff23d40b293" /> 
 
 No servidor Ares vamos fazer um ping para o Zeus.
 <img width="723" height="311" alt="image" src="https://github.com/user-attachments/assets/211e2335-83e2-42b1-a17e-398156e0e48c" />

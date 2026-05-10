@@ -7,7 +7,7 @@ Inicialemnte eu vou mostrar os requisitos utilizados para as duas maquinas
 <ol>
 	  <li> Sistema Operacional: Oracle Linux versão 8 ou mais</li>
   	<li> Memoria Ram: 4GB</li>
-  	<li> Placa de Rede: NAT and Host-only Adapter</li>
+  	<li> Placa de Rede: NAT e 2 host-only adapter </li>
 	  <li> CPU: 2 clocks</li>	
     <li> Ferramenta de SSH usada foi o Mobaxternm
 </ol>
@@ -30,5 +30,18 @@ Nome do Cluster 🗄️: Olympus <br>
 
 
 Alguns pre-requisitos a ser feito antes de iniciar qualquer instalação.<br>
+Teste de ping e acesso SSH. <br>
 
-Teste de ping e acesso SSH.
+No servidor Zeus vamos fazer um ping para o Ares.
+<img width="714" height="304" alt="image" src="https://github.com/user-attachments/assets/7e94d112-5dbc-4961-b22d-bff23d40b293" />
+
+No servidor Ares vamos fazer um ping para o Zeus.
+<img width="723" height="311" alt="image" src="https://github.com/user-attachments/assets/211e2335-83e2-42b1-a17e-398156e0e48c" />
+
+A seguir, contem um teste de SSh para os ambos os servidores.
+<img width="333" height="57" alt="image" src="https://github.com/user-attachments/assets/85db18c9-ba8f-4222-acbc-f8bc54e7d549" />
+
+<img width="317" height="62" alt="image" src="https://github.com/user-attachments/assets/21372622-eadb-4ad3-9a25-91f55a426fc3" />
+
+
+Agora está tudo certo para iniciar a instalação do Oracle Grid nos servidores. <br>

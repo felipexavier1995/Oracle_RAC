@@ -63,4 +63,4 @@ A seguir, contem um teste de SSh para os ambos os servidores.<br>
 <img width="317" height="62" alt="image" src="https://github.com/user-attachments/assets/21372622-eadb-4ad3-9a25-91f55a426fc3" />
 
 
-Agora está tudo certo para iniciar a instalação do Oracle Grid nos servidores. <br>
+Agora está tudo certo para iniciar a instalação primeiramente ao Oracle Grid e após isso Oracle Database.

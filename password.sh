@@ -1,5 +1,5 @@
 ### Senha ###
-## Usado na hora da instalação do grid e oracle
+## Todas as senhas ultilizadas nos ambiente da Grid e Oracle.
 
 ## sys ##
 Qaz1@wsx
@@ -12,3 +12,12 @@ Qaz1@wsx
 
 ## root ##
 1qaz@WSX
+
+## system ##
+Qaz1@wsx
+
+## PDBADMIN ##
+Qaz1@wsx
+
+## DBSNMP ##
+Qaz1@wsx

@@ -134,4 +134,54 @@ O Inventory Directory deve está no path a seguir /u01/app/oraInventory e depois
 OBS: Pode gerar esse warning, porem é normal
 <img width="802" height="628" alt="image" src="https://github.com/user-attachments/assets/51785319-5e05-4a82-b9d9-4677a7ca52d6" />
 
+A seguir  vamos optar para a primeira opção, vai usar o usuário root e sua senha, porque o instalador executa os scripts automaticamente sem você precisar intervir <br>
+<img width="801" height="625" alt="image" src="https://github.com/user-attachments/assets/f9b682f2-5abc-4228-bbf4-c2d60dce7bab" />
+
+Depois vai ser realizado um checking validando até o momento, agora vai apresentar alguns warnings, porém, como estamos em ambiente de laboratorio pode clicar em "ignore all" e seguir para a proximo passo <br>
+
+Resumo:
+
+| Check | Status | Ação
+|---|---|---|
+| Physical Memory  | Warning ❗| RAM abaixo de 8GB — normal para lab |
+| Swap Size | Warning ❗| Swap pequeno — normal para lab |
+| Package: cvuqdisk-1.0.10-1 | Warning ❗| Precisa instalar ✅ Fixable |
+| resolv.conf Integrity | Failed ❌ | Precisa corrigir |
+| /dev/shm mounted as temporary file system | Warning ❗ | Normal para lab |
+| DNS/NIS name service | Failed ❌| Precisa corrigir |
+
+<img width="797" height="627" alt="image" src="https://github.com/user-attachments/assets/2193254f-d5ed-484d-8182-6de5dd35a778" />
+
+Para ser corrigido alguns Failed com o comando a seguir:
+
+cvuqdisk instalado nos dois servidores! ✅
+yum install -y cvuqdisk 
+
+o oracle exige no maximo 3 nameservers IPv4.
+
+cat /etc/resolv.conf
+
+cat > /etc/resolv.conf << 'EOF'                <br>              
+search example.com                             <br>
+nameserver 181.213.132.2                       <br>
+nameserver 181.213.132.3                       <br>
+nameserver 8.8.8.8                             <br>
+EOF                                            <br>
+
+
+A seguir contem a correção e suas descrições:
+| Check | Motivo para ignorar | 
+|---|---|
+| Physical Memory  | Ambiente de lab com 2GB — abaixo do mínimo de 8GB mas funciona | 
+| Swap Size | Swap pequeno — aceitável para lab |  
+| resolv.conf Integrity | Usamos /etc/hosts no lugar do DNS | 
+| /dev/shm mounted as temporary file system | Não afeta a instalação em lab | 
+| DNS/NIS name service | Usamos /etc/hosts no lugar do DNS | 
+
+
+Quando apresentar os seguintes status, basta clicar em Ignore All e clicar em next, vai apresentar esse warning, porem podemos ignorar e seguir <br>
+<img width="793" height="631" alt="image" src="https://github.com/user-attachments/assets/c9786775-a647-4214-bd86-74fd86c44d17" />
+
+A seguir vai ter um summary que é um resumo das opções que a gente colocou. Basta clicar em INSTALL.
+<img width="798" height="631" alt="image" src="https://github.com/user-attachments/assets/f1d2c305-90e5-46eb-a4ef-543431f1fd34" />
 

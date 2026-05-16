@@ -185,3 +185,19 @@ Quando apresentar os seguintes status, basta clicar em Ignore All e clicar em ne
 A seguir vai ter um summary que é um resumo das opções que a gente colocou. Basta clicar em INSTALL.
 <img width="798" height="631" alt="image" src="https://github.com/user-attachments/assets/f1d2c305-90e5-46eb-a4ef-543431f1fd34" />
 
+| Configuração | Valor | 
+|---|---|
+| Cluster Name | olympus-cluster ✅ | 
+| Hub nodes | zeus, ares ✅ | 
+| SCAN | olympus-scan ✅| 
+| SCAN Port | 1521 ✅ |
+| Public Interface | enp0s3 ✅ | 
+| Private Interface | enp0s8 ✅ | 
+| ASM & Private | enp0s9 ✅ | 
+| Storage Type | Oracle ASM ✅ | 
+| ASM Disk Group | DATA ✅ | 
+| Storage Redundancy | EXTERNAL ✅ | 
+| Disks | DATA1, DATA2 ✅ | 
+| Inventory | /u01/app/oraInventory ✅ | 
+
+

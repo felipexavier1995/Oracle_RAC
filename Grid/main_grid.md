@@ -222,8 +222,6 @@ Vamos executar o seguinte comando nos servidores Zeus e Ares
 | ora.scan3.vip  | ONLINE ✅ | - |
 
 
+Parabens, o GRID foi instalado com sucesso, o Cluster Olympys está UP. <br>
 
-
-
-
-
+Agora, podemos instalação do Oracle Database.

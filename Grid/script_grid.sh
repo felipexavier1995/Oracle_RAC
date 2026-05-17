@@ -11,7 +11,8 @@
 ### (usado somente em caso se os servidores estão com o horário diferente) ###
 /u01/app/19.0.0/grid/bin/crsctl start res ora.crsd -init
 
-date -s "$(ssh root@ares date)" ### comando para deixar os horarios dos servidores com o mesmo valor (Caso for preciso)
+### comando para deixar os horarios dos servidores com o mesmo valor (Caso for preciso) ###
+date -s "$(ssh root@ares date)" 
 
 ### Listar todos os disks groups ###
 oracleasm listdisks

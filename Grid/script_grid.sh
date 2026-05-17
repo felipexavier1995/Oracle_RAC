@@ -13,3 +13,19 @@
 
 date -s "$(ssh root@ares date)" ### comando para deixar os horarios dos servidores com o mesmo valor (Caso for preciso)
 
+### Listar todos os disks groups ###
+oracleasm listdisks
+
+### Processo para instalar o GRID foi usado a seguir. ###
+
+### OBS: O path abaixo é onde se encontra os binarios do oracle
+
+su - oracle
+export DISPLAY=localhost:10.0
+cd /u01/app/oracle/product/19.0.0/dbhome_1
+./runInstaller
+
+### Iniciar o ASM e o CRSD manualmente ###
+/u01/app/19.0.0/grid/bin/crsctl start res ora.asm -init
+
+

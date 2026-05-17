@@ -201,3 +201,29 @@ A seguir vai ter um summary que é um resumo das opções que a gente colocou. B
 | Inventory | /u01/app/oraInventory ✅ | 
 
 
+Ai clicar em "Install" vai demorar um tempo relativo conforme ao seu hardware. <br>
+Ao Concluir a instalação, vamos rodar alguns comando para evidenciar o cluster de ambos os servidores <br>
+
+Vamos executar o seguinte comando nos servidores Zeus e Ares
+
+/u01/app/19.0.0/grid/bin/crsctl status res -t
+
+| Recurso | Servidor Zeus | Servidor Ares | 
+|---|---|---|
+| ora.LISTENER.lsnr | ONLINE ✅ | ONLINE ✅ |
+| ora.net1.network  | ONLINE ✅ | ONLINE ✅ |
+| ora.ons  | ONLINE ✅ | ONLINE ✅ |
+| ora.asm  | ONLINE ✅ | ONLINE ✅ |
+| ora.DATA.dg  | ONLINE ✅ | ONLINE ✅ |
+| ora.zeus.vip  | ONLINE ✅ | - |
+| ora.ares.vip  | ONLINE ✅ | - |
+| ora.scan1.vip  | - | ONLINE ✅ |
+| ora.scan2.vip  | ONLINE ✅ | - |
+| ora.scan3.vip  | ONLINE ✅ | - |
+
+
+
+
+
+
+

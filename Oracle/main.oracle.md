@@ -88,7 +88,53 @@ A instalação demora conforme ao seu hardware que está sendo utilizado.
 <img width="801" height="626" alt="image" src="https://github.com/user-attachments/assets/fe3a9a9a-b6e0-4008-9462-0f82d1a7e505" />
 
 
-Agora vamos criar o banco de dados RAC com DBCA.
+Agora vamos criar o banco de dados RAC com DBCA. <br>
+Dentro no servidor, vamos entrar com o usuário oracle.
+
+Dentro do caminho a seguir:
+/u01/app/oracle/product/19.0.0/dbhome_1
+
+Basta digitar os seguintes comandos para set e para iniciar o software de instalação do banco de dados
+
+export DISPLAY=localhost:10.0
+dbca
+
+Vai abrir a seguinte janela de instalação e deixar a opção de "Create a Database" e clicar em next
+<img width="818" height="655" alt="image" src="https://github.com/user-attachments/assets/d3fedc74-a00e-4226-b6a6-af179db1e949" />
+
+
+A proxima etapa é o tipo de implementação, vai deixar os seguintes campo e seus valores e depois clicar em next
+
+| Campo | Valor |
+|---|---|
+| Database type | Oracle Real Application Cluster (RAC) database ✅ |
+| Configuration type | Admin Managed ✅ |
+| Template | General Purpose or Transaction Processing ✅ |
+
+O template General Purpose or Transaction Processing é o mais adequado para um ambiente de laboratório RAC.
+
+<img width="801" height="631" alt="image" src="https://github.com/user-attachments/assets/7e2637a8-3b5c-40f0-a938-83994a891326" />
+
+Na porxima etapa é a seleção de Nodes que estão ligados, no caso vai apresentar os nossos servidores
+<img width="802" height="636" alt="image" src="https://github.com/user-attachments/assets/17dff093-8e8e-4ef1-8158-0c1af5e22631" />
+
+
+A seguir, vamos apresentar a identificação do banco de dados e precisamos mudar com os seguinte parametros. E em seguinda clicar em next
+| Campo | Valor |
+|---|---|
+| Global database name | olympus.example.com |
+| SID Prefix | olympus |
+| Create as Container database | ✅ marcado |
+| Create a Container database with one or more PDBs | ✅ marcado |
+| Number of PDBs | 1 |
+| PDB name | olympuspdb |
+
+
+
+
+
+
+
 
 
 

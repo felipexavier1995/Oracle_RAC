@@ -48,4 +48,47 @@ Na parte Installation location, vamos deixar nos seguinte caminhos
 <img width="803" height="635" alt="image" src="https://github.com/user-attachments/assets/83cfe2b4-759b-4f28-8c4e-add8935151cc" />
 
 
+Agora contem o system groups que tem na instalação.
+
+| Grupo | Valor |
+|---|---|
+| Database Administrator (OSDBA) | dba ✅ | 
+| Database Operator (OSOPER) | oper ✅ | 
+| Database Backup and Recovery (OSBACKUPDBA) | backupdba ✅ | 
+| Data Guard administrative (OSDGDBA) | dgdba ✅ | 
+| Encryption Key Management (OSKMDBA |  kmdba ✅ | 
+| Real Application Cluster administrative (OSRACDBA) | racdba ✅ | 
+<img width="801" height="632" alt="image" src="https://github.com/user-attachments/assets/75b1916a-0e50-4f4a-acf5-237e2cfe9df0" />
+
+A seguir vai ser apresentado que root script, deixa marcado na opção Automatically Run configuration scripts, basta digitar a senha de root <br>
+<img width="800" height="636" alt="image" src="https://github.com/user-attachments/assets/bca70e1a-b52b-460d-8b73-135510ead082" />
+
+
+Depois vai apresentar um resumo até o momento aqui, basta clicar em ignore all e depois clica em YES <br>
+Como estamos criando um ambiente de laboratorio, sabemos que podem contem alguns warnings no ambiente <br>
+<img width="801" height="635" alt="image" src="https://github.com/user-attachments/assets/b335d445-2a70-4f33-a5eb-ab45c82437ea" />
+<img width="805" height="633" alt="image" src="https://github.com/user-attachments/assets/095b0634-e832-40e5-beb4-38443cd7b93e" />
+
+A seguir, clica em INSTALL <br>
+
+Um resumo da instalação:
+| Configuração | Valor |
+|---|---|
+| Database Edition | Enterprise Edition (Set Up Software Only) ✅ |
+| Oracle base | /u01/app/oracle ✅ |
+| Software location | /u01/app/oracle/product/19.0.0/dbhome_1 ✅ |
+| Root script execution | Root user credential ✅ |
+| Cluster Nodes | zeus, ares ✅ |
+<img width="809" height="641" alt="image" src="https://github.com/user-attachments/assets/6d219a18-a622-4590-9218-981fbad15ac4" />
+
+A instalação demora conforme ao seu hardware que está sendo utilizado.
+<img width="804" height="629" alt="image" src="https://github.com/user-attachments/assets/b8bcef8e-a5a1-469b-a59d-d2f185fd73eb" />
+
+Instalação concluida com sucesso.
+<img width="801" height="626" alt="image" src="https://github.com/user-attachments/assets/fe3a9a9a-b6e0-4008-9462-0f82d1a7e505" />
+
+
+
+
+
 

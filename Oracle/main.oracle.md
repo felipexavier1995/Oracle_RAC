@@ -84,11 +84,11 @@ Um resumo da instalação:
 A instalação demora conforme ao seu hardware que está sendo utilizado.
 <img width="804" height="629" alt="image" src="https://github.com/user-attachments/assets/b8bcef8e-a5a1-469b-a59d-d2f185fd73eb" />
 
-Instalação concluida com sucesso.
+🎉 ORACLE DATABASE 19c INSTALADO COM SUCESSO! 🎉
 <img width="801" height="626" alt="image" src="https://github.com/user-attachments/assets/fe3a9a9a-b6e0-4008-9462-0f82d1a7e505" />
 
 
-
+Agora vamos criar o banco de dados RAC com DBCA.
 
 
 

@@ -130,6 +130,29 @@ A seguir, vamos apresentar a identificação do banco de dados e precisamos muda
 | PDB name | olympuspdb |
 
 
+A seguir vai conter a opção de storage option
+Vamos optar para a seguinte configuração, onde o +DATA/{DB_UNIQUE_NAME} é o nome da variavel, no caso do documentação é:
+
++DATA/OLYMPUS
+
+<img width="800" height="634" alt="image" src="https://github.com/user-attachments/assets/33285855-dc07-43a2-9880-b8cb30f9521d" />
+
+A proxima etapa é o fast recovery, vamos marca a opção de FRA, onde precisaria de um diskgroup separado, como +FRA ou +RECO, no nosso laboratorio vamos optar somente por +FRA <br>
+
+Sendo desso modo, podemos habilitar área de dedicada para backup, organização de archived logs, suporte a flashback database.
+<img width="799" height="633" alt="image" src="https://github.com/user-attachments/assets/585b9b40-013a-47aa-b79c-0e5a1301b046" />
+<img width="802" height="631" alt="image" src="https://github.com/user-attachments/assets/638125bf-a551-48b3-9ca8-10d4e3ee34b5" />
+
+Tambem podemos visualizar no browser, alguns detalhes do ambiente
+| Diskgroup | Size | Free | Redundancy | Compatibility |
+|---|---|---|---|---|
+| DATA | 20472 MB | 20124 MB | EXTERNAL | 19.0.0.0.0
+
+Fast Recovery Area: +DATA ✔️ <br>
+Fast Recovery Area size: 13332 MB ✔️ <br>
+Enable archiving: por enquanto desmarcado ✔️ <br>
+
+<img width="798" height="615" alt="image" src="https://github.com/user-attachments/assets/d344a48f-23cc-455c-be6a-54a4980a6228" />
 
 
 

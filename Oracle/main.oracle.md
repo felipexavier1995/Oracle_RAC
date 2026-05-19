@@ -154,8 +154,29 @@ Enable archiving: por enquanto desmarcado ✔️ <br>
 
 <img width="798" height="615" alt="image" src="https://github.com/user-attachments/assets/d344a48f-23cc-455c-be6a-54a4980a6228" />
 
+A seguinte tela não vamos preencher nada e clicar em next
+<img width="802" height="630" alt="image" src="https://github.com/user-attachments/assets/1b6cbbc8-023f-4202-87df-aabf7a20cbcf" />
 
 
+A seguir é a opções de configurações, vamos deixar a conforme a imagem a baixo, já as outras abas vão ficar com o seguinte modo.
+
+| 📋 Sizing | 
+|---|
+| Block size e processos máximos |
+
+| 🔤 Character sets | 
+|---|
+| Recomendo verificar se está AL32UTF8 — é o padrão universal e recomendado pela Oracle para novos bancos |
+
+| 🔌 Connection mode | 
+|---|
+| Dedicated Server ou Shared Server |
+
+| 📦 Sample schemas | 
+|---|
+| Instala schemas de exemplo como HR, OE, SH etc. |
+
+<img width="800" height="630" alt="image" src="https://github.com/user-attachments/assets/577c6997-74ed-4a70-8a4f-a20b6cf2edeb" />
 
 
 

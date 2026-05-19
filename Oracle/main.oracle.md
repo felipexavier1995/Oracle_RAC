@@ -185,5 +185,10 @@ A proxima etapa é a opçoes de gerenciamento precisamos deixar com as seguinte 
 Ao concluir vai ser apresentado os users com suas credencias, precisamos colocar a senha em cada um, senha essa já no arquivo chamado password <br>
 <img width="801" height="634" alt="image" src="https://github.com/user-attachments/assets/0d156623-a932-4653-bb89-c1519a0b2807" />
 
+Na proxima etapa, vamos deixar apenas a opção de create database sem qualquer valor no browse, pois esse script é para já se temos algum banco de dados, tablespaces ou usuário <br>
+<img width="584" height="459" alt="image" src="https://github.com/user-attachments/assets/10f8aecd-9859-422c-be27-9e86a0f91d84" />
 
+A seguir vai se apresentado o summary que é um resumo previo de todas as etapas e seus valores. Em seguida basta clicar em install <br>
+O processo vai demorar conforme o seu hardware <br>
+<img width="550" height="418" alt="image" src="https://github.com/user-attachments/assets/32e84636-81c0-441d-8fce-f5dc273df126" />
 

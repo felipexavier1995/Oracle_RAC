@@ -179,6 +179,11 @@ A seguir é a opções de configurações, vamos deixar a conforme a imagem a ba
 <img width="800" height="630" alt="image" src="https://github.com/user-attachments/assets/577c6997-74ed-4a70-8a4f-a20b6cf2edeb" />
 
 
+A proxima etapa é a opçoes de gerenciamento precisamos deixar com as seguinte opções
+<img width="801" height="636" alt="image" src="https://github.com/user-attachments/assets/91ec1134-ba1f-4062-954e-32dcc3601668" />
+
+Ao concluir vai ser apresentado os users com suas credencias, precisamos colocar a senha em cada um, senha essa já no arquivo chamado password
+<img width="801" height="634" alt="image" src="https://github.com/user-attachments/assets/0d156623-a932-4653-bb89-c1519a0b2807" />
 
 
 

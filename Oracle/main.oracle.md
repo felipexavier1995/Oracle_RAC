@@ -192,3 +192,31 @@ A seguir vai se apresentado o summary que é um resumo previo de todas as etapas
 O processo vai demorar conforme o seu hardware <br>
 <img width="550" height="418" alt="image" src="https://github.com/user-attachments/assets/32e84636-81c0-441d-8fce-f5dc273df126" />
 
+
+
+
+Ao ser finalizado, podemos realizar alguns teste de validação.
+
+Primeiro, validar a instances nos servidores com o comando
+
+ps -ef | grep pmon
+
+[oracle@zeus ~]$ ps -ef | grep pmon                                        <br>
+oracle    4241     1  0 20:52 ?        00:00:00 asm_pmon_+ASM1             <br>
+oracle    6792     1  0 20:52 ?        00:00:00 ora_pmon_olympus1          <br>
+oracle   19148  2792  0 20:58 pts/0    00:00:00 grep --color=auto pmon     <br>
+[oracle@zeus ~]$                                                           <br>
+
+[oracle@ares ~]$ ps -ef | grep pmon                                        <br>
+oracle    4982     1  0 20:58 ?        00:00:00 asm_pmon_+ASM2             <br>
+oracle    5665     1  0 20:58 ?        00:00:00 ora_pmon_olympus2          <br>
+oracle    5857  3602  2 20:58 pts/0    00:00:00 grep --color=auto pmon     <br>
+[oracle@ares ~]$                                                           <br>
+
+
+
+
+
+
+
+

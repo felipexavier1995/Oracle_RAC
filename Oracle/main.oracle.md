@@ -213,8 +213,17 @@ oracle    5665     1  0 20:58 ?        00:00:00 ora_pmon_olympus2          <br>
 oracle    5857  3602  2 20:58 pts/0    00:00:00 grep --color=auto pmon     <br>
 [oracle@ares ~]$                                                           <br>
 
+export ORACLE_SID=olympus1                                                 <br>
+export ORACLE_HOME=/u01/app/oracle/product/19.0.0/dbhome_1                 <br>
+export PATH=$ORACLE_HOME/bin:$PATH                                         <br>
+sqlplus / as sysdba                                                        <br>
 
 
+<img width="656" height="267" alt="image" src="https://github.com/user-attachments/assets/fcc2c8fd-d56d-41b7-85cc-0f83a5b6b017" />
+<img width="1008" height="257" alt="image" src="https://github.com/user-attachments/assets/96bfc921-2897-4256-818c-656436d4ccee" />
+
+
+Perfeito! Banco funcionando perfeitamente! 🎉
 
 
 

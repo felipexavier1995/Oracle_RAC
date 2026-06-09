@@ -8,7 +8,7 @@ cd /u01/app/oracle/product/19.0.0/dbhome_1
 
 
 ### acesso ao banco de dados(add manualmente a variável ORACLE_SID) ###
-export ORACLE_SID=olympus1 ### olympus1 é a nome da instance.
+export ORACLE_SID=olympus1 ### olympus1 é a nome da instance. --- podemos trocar o nome olympus1 por outra que for a instance
 export ORACLE_HOME=/u01/app/oracle/product/19.0.0/dbhome_1
 export PATH=$ORACLE_HOME/bin:$PATH
 

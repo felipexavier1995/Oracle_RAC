@@ -28,4 +28,4 @@ df -h /acfs01/dpump
 
 -- Criando um Directory:
 CREATE OR REPLACE DIRECTORY dpump_dir AS '/acfs01/dpump';
-GRANT READ, WRITE ON DIRECTORY dpump_dir TO <usuario_responsavel>;
+GRANT READ, WRITE ON DIRECTORY dpump_dir TO <usuario_responsavel>; --- SCHEMA/usuário que vai rodar o impdp.

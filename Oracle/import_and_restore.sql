@@ -29,3 +29,8 @@ df -h /acfs01/dpump
 -- Criando um Directory:
 CREATE OR REPLACE DIRECTORY dpump_dir AS '/acfs01/dpump';
 GRANT READ, WRITE ON DIRECTORY dpump_dir TO <usuario_responsavel>; --- SCHEMA/usuário que vai rodar o impdp.
+
+-- query para valiar o diretorio criado.
+SELECT directory_name, directory_path 
+  FROM dba_directories 
+  WHERE directory_name = 'DPUMP_DIR';

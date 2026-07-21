@@ -53,7 +53,31 @@ srvctl start service -d olympus -service olympuspdb_svc
 srvctl status service -d olympus
 
 /*
-Com o seguinte mensagem ()
+Com o seguinte mensagem (Service olympuspdb_svc is running on instance(s) olympus1) -- O nó principal está no olympus1
 */
+-- A seguir vamos criar um usuário para realizar os dump.
+CREATE USER dpump_admin IDENTIFIED BY "SenhaSemArroba123";
+
+GRANT CONNECT, RESOURCE TO dpump_admin;
+GRANT EXP_FULL_DATABASE TO dpump_admin;
+GRANT IMP_FULL_DATABASE TO dpump_admin;
+GRANT READ, WRITE ON DIRECTORY dpump_dir TO dpump_admin;
+GRANT UNLIMITED TABLESPACE TO dpump_admin;
+-- senha é SenhaSemArroba123 (Tambem registrado no arquivo chamado de arquivo)
+
+/* Observação
+com o comando vi $ORACLE_HOME/network/admin/tnsnames.ora
+vamos deixar do seguinte modo para fazer a conexão:
+
+OLYMPUS =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = olympus-scan)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = olympuspdb_svc.example.com)
+    )
+  )
+*/
+
 
 

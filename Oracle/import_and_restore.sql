@@ -78,6 +78,48 @@ OLYMPUS =
     )
   )
 */
+------------------------ BACKUP FULL ------------------------
+-- Dentro do diretorio /acfs01/dpump vamos criar os arquivos .sh de impdp e expdp.
+
+-- Digitar o comando vi expdp_full.sh (Colar os seguintes parametros)
+expdp dpump_admin/"SenhaSemArroba123"@olympus \
+  DIRECTORY=dpump_dir \
+  DUMPFILE=full_export_%U.dmp \
+  LOGFILE=full_export.log \
+  PARALLEL=4 \
+  CLUSTER=YES \
+  FULL=YES
+-- Digitar o comando vi impdp_full.sh (Colar os seguintes parametros)
+impdp dpump_admin/"SenhaSemArroba123"@olympus \
+  DIRECTORY=dpump_dir \
+  DUMPFILE=full_export_%U.dmp \
+  LOGFILE=full_import.log \
+  PARALLEL=4 \
+  CLUSTER=YES \
+  FULL=YES
+
+------------------------ BACKUP SCHEMAS ------------------------
+-- Digitar o comando vi expdp_schemas.sh (Colar os seguintes parametros)
+expdp dpump_admin/"SenhaSemArroba123"@olympus \
+  DIRECTORY=dpump_dir \
+  DUMPFILE=schema_export_%U.dmp \
+  LOGFILE=schema_export.log \
+  PARALLEL=4 \
+  CLUSTER=YES \
+  SCHEMAS=NOME_DO_SCHEMA ---Schema que queira fazer
+-- Digitar o comando vi impdp_schemas.sh (Colar os seguintes parametros)
+impdp dpump_admin/"SenhaSemArroba123"@olympus \
+  DIRECTORY=dpump_dir \
+  DUMPFILE=schema_export_%U.dmp \
+  LOGFILE=schema_import.log \
+  PARALLEL=4 \
+  CLUSTER=YES \
+  SCHEMAS=NOME_DO_SCHEMA \ ---Schema que queira fazer
+  TABLE_EXISTS_ACTION=REPLACE
+
+/* Com os arquivos criados, precisamos dar permissão para acesar com o comando.
+  chmod 700 expdp_full.sh impdp_full.sh expdp_schemas.sh impdp_schemas.sh
+*/
 
 
 

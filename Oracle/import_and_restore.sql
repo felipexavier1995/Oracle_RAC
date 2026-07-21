@@ -35,3 +35,18 @@ SELECT directory_name, directory_path
   FROM dba_directories 
   WHERE directory_name = 'DPUMP_DIR';
 
+--- OBS para se citar, vai precisar verificar se ambos estão open.
+SELECT inst_id, name, open_mode FROM gv$pdbs;
+
+-- Caso não esteja, vamos alterar os PDB's
+ALTER SESSION SET CONTAINER = OLYMPUSPDB;
+
+/*
+Verificando o serviço do PDB
+vamos precisar ver o status do serviço que contem na instance com o comando fora do sqlplus plus
+*/
+srvctl start service -d olympus -service olympuspdb_svc -- caso não retorne nada, precisamos criar do zero.
+
+
+
+

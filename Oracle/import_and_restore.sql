@@ -47,6 +47,13 @@ vamos precisar ver o status do serviço que contem na instance com o comando for
 */
 srvctl start service -d olympus -service olympuspdb_svc -- caso não retorne nada, precisamos criar do zero.
 
+--- Comandos para primeiro criar o serviço e depois "ligar" o serviço.
+srvctl add service -d olympus -service olympuspdb_svc -pdb olympuspdb
+srvctl start service -d olympus -service olympuspdb_svc
+srvctl status service -d olympus
 
+/*
+Com o seguinte mensagem ()
+*/
 
 

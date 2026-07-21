@@ -21,3 +21,8 @@ Qaz1@wsx
 
 ## DBSNMP ##
 Qaz1@wsx
+
+## dpump_admin ## -- usuário para fazer impdp e expdp
+CREATE USER dpump_admin IDENTIFIED BY "SenhaSemArroba123";
+
+## Senha é SenhaSemArroba123

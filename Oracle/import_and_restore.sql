@@ -81,14 +81,43 @@ OLYMPUS =
 ------------------------ BACKUP FULL ------------------------
 -- Dentro do diretorio /acfs01/dpump vamos criar os arquivos .sh de impdp e expdp.
 
+-- Um detalhe importante para dizer: Verificar o tnsnames.ora normalmente fica no diretorio 
+-- ORACLE_HOME=/u01/app/oracle/product/19.0.0/dbhome_1
+/*
+Por uma questão de particularidade do laboratorio de teste vai ficar desse modo
+
+cat > $ORACLE_HOME/network/admin/tnsnames.ora << 'EOF'
+OLYMPUS =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = olympus-scan)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = olympuspdb_svc.example.com)
+    )
+  )
+
+OLYMPUS_ZEUS =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = zeus)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = olympuspdb_svc.example.com)
+      (INSTANCE_NAME = olympus1)
+    )
+  )
+EOF
+*/
+
+
 -- Digitar o comando vi expdp_full.sh (Colar os seguintes parametros)
-expdp dpump_admin/"SenhaSemArroba123"@olympus \
+expdp dpump_admin/"SenhaSemArroba123"@olympus_zeus \
   DIRECTORY=dpump_dir \
   DUMPFILE=full_export_%U.dmp \
   LOGFILE=full_export.log \
-  PARALLEL=4 \
-  CLUSTER=YES \
-  FULL=YES
+  PARALLEL=1 \
+  CLUSTER=NO \
+  FULL=YES \
+  REUSE_DUMPFILES=YES
 -- Digitar o comando vi impdp_full.sh (Colar os seguintes parametros)
 impdp dpump_admin/"SenhaSemArroba123"@olympus \
   DIRECTORY=dpump_dir \

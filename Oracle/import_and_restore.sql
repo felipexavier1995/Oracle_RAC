@@ -127,7 +127,6 @@ impdp dpump_admin/"SenhaSemArroba123"@olympus_zeus \
   CLUSTER=NO \
   FULL=YES \
   TABLE_EXISTS_ACTION=REPLACE -- Linha para evitar possiveis erros no log do import
-EOF
 ------------------------ BACKUP SCHEMAS ------------------------
 -- Digitar o comando vi expdp_schemas.sh (Colar os seguintes parametros)
 expdp dpump_admin/"SenhaSemArroba123"@olympus \

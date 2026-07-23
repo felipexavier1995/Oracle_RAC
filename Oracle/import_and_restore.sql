@@ -148,7 +148,10 @@ impdp dpump_admin/"SenhaSemArroba123"@olympus \
   TABLE_EXISTS_ACTION=REPLACE
 
 /* Com os arquivos criados, precisamos dar permissão para acesar com o comando.
-  chmod 700 expdp_full.sh impdp_full.sh expdp_schemas.sh impdp_schemas.sh
+  chmod 700 expdp_full.sh 
+  chmod 700 impdp_full.sh
+  chmod 700 expdp_schemas.sh
+  chmod 700 impdp_schemas.sh
 */
 
 

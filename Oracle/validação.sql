@@ -1,6 +1,5 @@
 
-/*
--- Query.
+-- Query para saber a validação do instance
 
 alter session set nls_date_format='dd/mm/yy:hh24:mi:ss';
 set pagesize 5555
@@ -11,4 +10,4 @@ from v$instance, v$license v
 /
 
 
-*/
+

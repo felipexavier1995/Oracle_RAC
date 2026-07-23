@@ -119,14 +119,15 @@ expdp dpump_admin/"SenhaSemArroba123"@olympus_zeus \
   FULL=YES \
   REUSE_DUMPFILES=YES
 -- Digitar o comando vi impdp_full.sh (Colar os seguintes parametros)
-impdp dpump_admin/"SenhaSemArroba123"@olympus \
+impdp dpump_admin/"SenhaSemArroba123"@olympus_zeus \
   DIRECTORY=dpump_dir \
   DUMPFILE=full_export_%U.dmp \
   LOGFILE=full_import.log \
-  PARALLEL=4 \
-  CLUSTER=YES \
-  FULL=YES
-
+  PARALLEL=1 \
+  CLUSTER=NO \
+  FULL=YES \
+  TABLE_EXISTS_ACTION=REPLACE -- Linha para evitar possiveis erros no log do import
+EOF
 ------------------------ BACKUP SCHEMAS ------------------------
 -- Digitar o comando vi expdp_schemas.sh (Colar os seguintes parametros)
 expdp dpump_admin/"SenhaSemArroba123"@olympus \

@@ -128,6 +128,10 @@ impdp dpump_admin/"SenhaSemArroba123"@olympus_zeus \
   FULL=YES \
   TABLE_EXISTS_ACTION=REPLACE -- Linha para evitar possiveis erros no log do import
 ------------------------ BACKUP SCHEMAS ------------------------
+/*
+  Basta trocar a linha SCHEMA por qual schema que queira.
+*/
+  
 -- Digitar o comando vi expdp_schemas.sh (Colar os seguintes parametros)
 expdp dpump_admin/"SenhaSemArroba123"@olympus \
   DIRECTORY=dpump_dir \
@@ -145,6 +149,8 @@ impdp dpump_admin/"SenhaSemArroba123"@olympus \
   CLUSTER=YES \
   SCHEMAS=NOME_DO_SCHEMA \ ---Schema que queira fazer
   TABLE_EXISTS_ACTION=REPLACE
+
+
 
 /* Com os arquivos criados, precisamos dar permissão para acesar com o comando.
   chmod 700 expdp_full.sh 

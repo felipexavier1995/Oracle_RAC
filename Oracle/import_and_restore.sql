@@ -151,6 +151,10 @@ impdp dpump_admin/"SenhaSemArroba123"@olympus \
   TABLE_EXISTS_ACTION=REPLACE
 
 
+-- Ao terminar gostar digitar os seguinte comando quando for fazer um import para ver
+  -- Quantidade de erros e quais erros.
+grep -c "ORA-" /acfs01/dpump/full_import.log
+grep "ORA-" /acfs01/dpump/schema_import.log | sort | uniq -c
 
 /* Com os arquivos criados, precisamos dar permissão para acesar com o comando.
   chmod 700 expdp_full.sh 
